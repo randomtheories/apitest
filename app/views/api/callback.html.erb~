@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Test</title>
+</head>
+<body>
+<h1>Test</h1>
+  <table>
+
+    <tr>
+      <td>Name: </td>
+      <td> <%= @names.name %> </td>
+      <td> <%= @names.id %> </td>
+    </tr>
+
+  </table>
+</body>
+</html>
