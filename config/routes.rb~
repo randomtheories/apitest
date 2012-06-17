@@ -1,10 +1,6 @@
 Apitest::Application.routes.draw do
   resources :pages
-  namespace :api do
-    namespace :v1 do
-      match 'api' => 'api#getnames'
-    end
-  end
+  match 'api' => 'api#getnames'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
