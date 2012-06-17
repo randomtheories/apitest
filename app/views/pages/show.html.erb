@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @page.url %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @page.comment %>
+</p>
+
+<p>
+  <b>Usable:</b>
+  <%= @page.usable %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>

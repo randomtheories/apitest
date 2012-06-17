@@ -10,10 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120612114352) do
+ActiveRecord::Schema.define(:version => 20120617140019) do
 
   create_table "names", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "pages", :force => true do |t|
+    t.string   "url"
+    t.text     "comment"
+    t.boolean  "usable"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
